@@ -37,5 +37,8 @@ export default class Product extends Component {
 }
 
 const ProductWrapper = styled.div`
-
+.card {
+    border-color: transparent;
+    transition: all 1s linear;
+}
 `
