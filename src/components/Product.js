@@ -41,4 +41,9 @@ const ProductWrapper = styled.div`
     border-color: transparent;
     transition: all 1s linear;
 }
-`
+.card-footer {
+    background: transparent;
+    border-top: transparent;
+    transition: all 1s linear;
+}
+`;
