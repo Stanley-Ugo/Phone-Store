@@ -55,4 +55,9 @@ const ProductWrapper = styled.div`
         background: rgba(247, 247, 247);
     }
 }
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
 `;
