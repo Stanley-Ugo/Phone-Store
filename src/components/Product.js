@@ -12,7 +12,7 @@ export default class Product extends Component {
                 <div className="card">
                     <div className="img-container p-5" onClick={() => console.log('you clicked me')}>
                         <Link to="/details">
-                            <img src={img} alt="Product" className="car-img-top"/>
+                            <img src={img} alt="Product" className="card-img-top"/>
                         </Link>
                         <button className="cart-btn" disabled={inCart ? true : false }
                         onClick={()=> {console.log('added to the cart')}}
@@ -59,5 +59,30 @@ const ProductWrapper = styled.div`
     position: relative;
     overflow: hidden;
 }
-
+.card-img-top {
+    transition: all 1s linear;
+}
+.img-container:hover .card-img-top{
+    transform:scale(1.2);
+}
+.cart-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    background: var(--lightBlue);
+    border: none;
+    color: var(--mainWhite);
+    font-size: 1.4rem;
+    border-radius: 0.5rem 0 0 0;
+    transform: translate(100% 100%);
+    transition: all 1s linear;
+}
+.img-container: hover {
+    transform: translate(0, 0);
+}
+.cart-btn: hover {
+    color: var(--mainBlue);
+    cursor: pointer;
+}
 `;
