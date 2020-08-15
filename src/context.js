@@ -41,7 +41,8 @@ class ProductProvider extends Component {
     }
 
     addToCart = (id) => {
-        console.log(`hello from add to cart your is is ${id}`);
+        let tempProduct = [...this.state.products];
+        
     }
     render() {
         return (
