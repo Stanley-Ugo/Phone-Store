@@ -82,11 +82,11 @@ class ProductProvider extends Component {
     }
 
     removeItem = () => {
-        console.log('item removed')
+        console.log('item removed');
     }
 
     clearCart = () => {
-        console.log('cart was cleared';)
+        console.log('cart was cleared');
     }
     render() {
         return (
