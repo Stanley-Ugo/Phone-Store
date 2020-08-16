@@ -19,8 +19,9 @@ export default class Model extends Component {
               <ModelContainer>
                 <div className="container">
                     <div className="row">
-                        <div id="model" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                        <div id="model" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">
                             <h5>Item added to the Cart</h5>
+                            <img src={img} className="img-fluid" alt="product" />
                         </div>
                     </div>
                 </div>
