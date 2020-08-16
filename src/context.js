@@ -12,7 +12,7 @@ class ProductProvider extends Component {
         products: [],
         detailProduct: detailProduct,
         cart: [],
-        modelOpen: true,
+        modelOpen: false,
         modelProduct: detailProduct
     };
 
