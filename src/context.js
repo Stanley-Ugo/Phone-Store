@@ -54,6 +54,19 @@ class ProductProvider extends Component {
 
         this.setState(() => {
             return {products: tempProducts, cart: [...this.state.cart, product]}
+        }, () => {console.log(this.state)})
+    }
+
+    openModel = (id) => {
+        const product = this.getItem(id);
+        this.setState(() => {
+            return { modelProduct: product, modelOpen: true}
+        })
+    }
+
+    closeModel = () => {
+        this.setState(() => {
+            return { modelOpen: false }
         })
     }
     render() {
@@ -61,7 +74,9 @@ class ProductProvider extends Component {
             <ProductContext.Provider value={{
                 ...this.state,
                 handleDetail: this.handleDetail,
-                addToCart: this.addToCart
+                addToCart: this.addToCart,
+                openModel: this.openModel,
+                closeModel: this.closeModel
             }}>
                 {this.props.children}
             </ProductContext.Provider>
