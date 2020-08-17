@@ -97,6 +97,7 @@ class ProductProvider extends Component {
                 openModel: this.openModel,
                 closeModel: this.closeModel,
                 increment: this.increment,
+                decrement: this.decrement,
                 removeItem: this.removeItem,
                 clearCart: this.clearCart
             }}>
