@@ -35,7 +35,7 @@ body {
   border: 0.1rem solid var(--mainDark) !important;
 }
 
-.btn-black: hover {
+.btn-black:hover {
   background: var(--mainDark) !important;
   color: var(--mainWhite) !important;
 }
